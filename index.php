@@ -1,7 +1,5 @@
 <?php 
 
-require("vistas/layout.html");
-
 require("controladores/Auxiliar.php");
 
 /*
@@ -15,11 +13,15 @@ require("controladores/Auxiliar.php");
 
 */
 
+//Arrancar la partida
+$messages = Auxiliar::newMessage();
+$view = Auxiliar::generateView($messages);
 
-if(isset($_POST['message'])) {
+echo $view;
 
-  echo($_POST['message']);
 
-}
+// if(isset($_POST['message'])) {
 
-?>
+//   echo($_POST['message']);
+
+// }
