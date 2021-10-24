@@ -1,0 +1,2 @@
+- Fix resending of message when refreshing
+- Fix sending empty messages
