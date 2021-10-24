@@ -10,15 +10,22 @@
 <body>
   
   <header>
-    <form action="" method="POST">
-      <input type="text" id="message" name="message" placeholder="Your message">
-      <input type="submit" value="Submit">
-    </form> 
+    <div class="div-centered-hv">
+      <form action="" method="POST">
+        <input type="text" id="message" name="message" placeholder="Your message">
+        <input type="submit" value="Send">
+      </form>
+    </div>
   </header>
 
   <article>
 
+    <div id="background" class="div-centered-hv">
 
+      <div id="messagebox-inside">
+        [MESSAGES]
+      </div>
+    </div>
 
   </article>
 </body>
@@ -26,6 +33,19 @@
 
 
 <?php 
+
+
+/*
+
+<div id="message-container-left">
+  <div id="message-box" class="message-left"></div>
+</div>
+<div id="message-container-right">
+  <div id="message-box" class="message-right"></div>
+</div>
+
+*/
+
 
 if(isset($_POST['message'])) {
 
