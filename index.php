@@ -2,26 +2,18 @@
 
 require("controladores/Auxiliar.php");
 
-/*
 
-<div id="message-container-left">
-  <div id="message-box" class="message-left"></div>
-</div>
-<div id="message-container-right">
-  <div id="message-box" class="message-right"></div>
-</div>
+session_start();
 
-*/
+if(isset($_GET["reset"])) {
 
-//Arrancar la partida
-$messages = Auxiliar::newMessage();
-$view = Auxiliar::generateView($messages);
+  session_destroy();
 
-echo $view;
+} else {
 
-
-// if(isset($_POST['message'])) {
-
-//   echo($_POST['message']);
-
-// }
+  //Arrancar la partida
+  $messages = Auxiliar::newMessage();
+  $view = Auxiliar::generateView($messages);
+  
+  echo $view;
+}

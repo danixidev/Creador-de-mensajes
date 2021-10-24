@@ -1,3 +1,9 @@
+p {
+    font-family: sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 .div-centered-hv {
     align-items: center;
     display: flex;
@@ -18,7 +24,7 @@
     border: 2px solid black;
 
     margin: 20px auto;
-    width: 500px;
+    width: 800px;
     height: auto;
 
     background-color: grey;
@@ -27,25 +33,28 @@
 #messagebox-inside {
     padding: 10px;
     width: 95%;
-    height: 95%;
+    height: 100%;
 }
 
 
 #message-container-left {
     width: 100%;
-    height: 50px;
+    height: 60px;
 }
 
 #message-container-right {
     width: 100%;
-    height: 50px;
+    height: 60px;
 }
 
 
 #message-box {
-    margin: 5px 0;
-    width: 60%;
-    height: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* margin: 5px; */
+    width: auto;
+    height: auto;
 }
 
 
